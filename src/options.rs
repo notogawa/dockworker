@@ -575,7 +575,7 @@ impl ContainerBuildOptions {
             params.append_pair("q", "true");
         }
         if self.no_cache {
-            params.append_pair("no_cache", "true");
+            params.append_pair("nocache", "true");
         }
         if let Some(ref cache_from) = self.cache_from {
             params.append_pair("cache_from", &serde_json::to_string(&cache_from).unwrap());
